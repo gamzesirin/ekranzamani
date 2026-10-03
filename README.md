@@ -3,7 +3,8 @@
 Günlük uygulama kullanımını otomatik takip eden basit bir masaüstü uygulaması (Electron).
 Hangi uygulamada ne kadar vakit geçirdiğini gösterir. **Tüm veriler yalnızca senin bilgisayarında** saklanır — hiçbir yere gönderilmez.
 
-<img width="1920" height="1080" alt="ekran-zamani-linkedin" src="https://github.com/user-attachments/assets/5e390ab8-d67d-4318-bd48-ed6b48f20217" />
+<img width="1920" height="1080" alt="linkedin-1920x1080" src="https://github.com/user-attachments/assets/a989cfcb-a214-44db-af2c-6568a1e60cf9" />
+
 
 
 ## Kurulum
