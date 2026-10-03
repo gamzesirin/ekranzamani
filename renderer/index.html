@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';" />
+  <title>Ekran Zamanı</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">
+          <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span>
+        </div>
+        <div>
+          <p class="sub">Vaktin nereye gidiyor?</p>
+        </div>
+      </div>
+      <div class="live" id="live">
+        <span class="dot" id="liveDot"></span>
+        <span id="liveText">Başlatılıyor…</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="datenav">
+        <button id="prevDay" class="navbtn" title="Önceki gün">‹</button>
+        <div class="datelabel">
+          <span id="dateMain">—</span>
+          <span id="dateRel" class="daterel"></span>
+        </div>
+        <button id="nextDay" class="navbtn" title="Sonraki gün">›</button>
+        <button id="todayBtn" class="todaybtn">Bugün</button>
+      </div>
+      <div class="total">
+        <span class="total-num" id="totalTime">0sn</span>
+        <span class="total-cap">toplam ekran süresi</span>
+      </div>
+    </section>
+
+    <section class="week">
+      <div class="week-head">Son 7 gün</div>
+      <div class="week-bars" id="weekBars"></div>
+    </section>
+
+    <section class="list-section">
+      <div class="list-head">
+        <span>Uygulamalar</span>
+        <span id="appCount" class="muted"></span>
+      </div>
+      <div id="appList" class="applist"></div>
+      <div id="emptyState" class="empty" hidden>
+        <div class="empty-emoji">🌱</div>
+        <p>Bu gün için henüz veri yok.</p>
+        <p class="muted">Uygulamalarını kullandıkça buraya birikecek.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-actions">
+        <button id="pauseBtn" class="pausebtn">⏸ Takibi Duraklat</button>
+        <button id="exportBtn" class="exportbtn">⤓ Rapor (CSV)</button>
+      </div>
+      <span class="muted small">Tüm veriler yalnızca bu bilgisayarda saklanır 🔒</span>
+    </footer>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
