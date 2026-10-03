@@ -8,7 +8,7 @@ Hangi uygulamada ne kadar vakit geçirdiğini gösterir. **Tüm veriler yalnızc
 
 ## Kurulum
 
-**[⬇️ Windows için indir]**
+**[⬇️ Windows için indir](https://github.com/gamzesirin/ekranzamani/releases/tag/v1.1.1)**
 
 1. Açılan sayfadan `EkranZamani-Setup-x.x.x.exe` dosyasını indir ve çalıştır.
 2. Windows "Windows kişisel bilgisayarınızı korudu" uyarısı gösterirse **Ek bilgi → Yine de çalıştır**'a tıkla (uygulama dijital olarak imzalı olmadığı için çıkar).
