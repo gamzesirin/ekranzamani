@@ -1,0 +1,13 @@
+# Bağımlılıklar
+node_modules/
+
+# Derleme çıktısı
+dist/
+
+# Loglar
+*.log
+npm-debug.log*
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db

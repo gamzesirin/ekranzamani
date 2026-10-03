@@ -1,0 +1,53 @@
+{
+  "name": "ekran-zamani",
+  "version": "1.0.0",
+  "description": "Ekran Zamanı — günlük uygulama kullanım takibi (lokal, gizli)",
+  "main": "main.js",
+  "author": "Gamze Şirin",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "icon": "node generate-icon.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.gamze.ekranzamani",
+    "productName": "Ekran Zamani",
+    "asar": true,
+    "asarUnpack": [
+      "scripts/**"
+    ],
+    "files": [
+      "main.js",
+      "preload.js",
+      "tracker.js",
+      "store.js",
+      "scripts/**",
+      "renderer/**",
+      "assets/**"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Ekran Zamanı",
+      "artifactName": "EkranZamani-Setup-${version}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "^43.7.7",
+    "electron-builder": "^26.15.3"
+  }
+}
